@@ -1,0 +1,17 @@
+password : TMw2YiVjzJ1cKrdT ,
+user : gaurayush276
+
+
+
+people to use the site -- >> making the seperate api and slice 
+
+people done 
+user authentication done
+editiing the user api so that i can add friends 
+
+
+
+1 ---  onlcick get the id 
+2---- find uesr by id 
+3 --- select the user 
+4 -- add kr lo 
