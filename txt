@@ -15,3 +15,4 @@ editiing the user api so that i can add friends
 2---- find uesr by id 
 3 --- select the user 
 4 -- add kr lo 
+

@@ -4,10 +4,16 @@ const userRouter = require("./routes/authRouter") ;
 const peopleRouter = require("./routes/peopleRouter") ;
 const mongoose = require("mongoose") ; 
 
-mongoose.connect('mongodb+srv://gaurayush276:TMw2YiVjzJ1cKrdT@cluster1.4ajqy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1')
-  .then(() => console.log("MongoDB connected"))
-  .catch(err => console.log(err));
 
+async function database () {
+
+  await mongoose.connect('mongodb+srv://gaurayush276:TMw2YiVjzJ1cKrdT@cluster1.4ajqy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1')
+    .then(() => console.log("MongoDB connected"))
+    .catch(err => console.log(err));
+}
+
+
+  database() ; 
   // Middleware to parse JSON request body
 server.use(express.json()) ; 
 

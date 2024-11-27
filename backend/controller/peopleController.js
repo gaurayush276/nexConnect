@@ -41,3 +41,9 @@ exports.getAllUserCard = async (req, res)=>{
 //         res.status(500).json({ error: "Error fetching user cards" });
 //     }
 // };
+
+exports.getUserCardById = async(req , res )=>{
+    const id = await req.params.id ; 
+    const data = await People.findById(id) ; 
+    res.json(data) ; 
+}
